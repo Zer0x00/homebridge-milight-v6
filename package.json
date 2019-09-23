@@ -1,21 +1,21 @@
 {
   "name": "homebridge-milight-v6",
-  "version": "0.0.4",
-  "description": "Plugin for milight v6 (2016 onwards) for homebridge (https://github.com/nfarina/homebridge)",
+  "version": "0.0.5",
+  "description": "Plugin for milight v6 (2016 onwards) for homebridge (https://github.com/buenyamin-olgun/homebridge); Original Author: Marcel Laurijsse",
   "license": "GNU GPL",
   "author": {
-    "name": "Marcel Laurijsse",
-    "url": "https://github.com/mlaurijsse/homebridge-milight-v6"
+    "name": "Bünyamin Olgun",
+    "url": "https://github.com/buenyamin-olgun/homebridge-milight-v6"
   },
   "keywords": [
-    "homebridge-plugin"
+    "homebridge-plugin", "milight"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mlaurijsse/homebridge-milight-v6.git"
+    "url": "git://github.com/buenyamin-olgun/homebridge-milight-v6.git"
   },
   "bugs": {
-    "url": "http://github.com/mlaurijsse/homebridge-milight-v6/issues"
+    "url": "http://github.com/buenyamin-olgun/homebridge-milight-v6/issues"
   },
   "engines": {
     "node": ">=0.12.0",

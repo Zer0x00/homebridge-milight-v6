@@ -1,5 +1,5 @@
 # homebridge-milight-v6
-MiLight/LimitlessLED/Easybulb Plugin for [Homebridge](https://github.com/nfarina/homebridge)
+MiLight/LimitlessLED/Easybulb Plugin for [Homebridge](https://github.com/buenyamin-olgun/homebridge)
 
 This plugin adds support for the new RGBWW bulbs.
 
