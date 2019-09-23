@@ -189,8 +189,6 @@ MiLightAccessory.prototype.setOn = function(on, callback, context) {
     debug('Setting %s (%s, %d) power to %s', this.name, this.type, this.zone, on);
     if (on) {
       this.controller.sendCommands(this.commands.on(this.zone));
-      this.setWhiteMode(this.service.getCharacteristic(Characteristic.WhiteMode).value,
-        function(dummy) {}, 'setmode');
     } else {
       this.controller.sendCommands(this.commands.off(this.zone));
     }
