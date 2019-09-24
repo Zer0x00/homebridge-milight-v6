@@ -1,0 +1,95 @@
+{
+   "pluginAlias": "MiLight-v6",
+   "pluginType": "platform",
+   "singular": true,
+   "headerDisplay": "Your bridge must be **up and paired** with the zones you want to use for this plugin to work.",
+   "footerDisplay": "For help please open an [issue](https://github.com/buenyamin-olgun/homebridge-milight-v6/issues).",
+   "schema": {
+      "name": {
+         "title": "Name",
+         "type": "string",
+         "default": "Milight",
+         "required": true
+      },
+      "bridges": {
+         "type": "array",
+         "items": {
+            "title": "Bridge Config",
+            "type": "object",
+            "properties": {
+               "name": {
+                  "title": "name",
+                  "type": "string",
+                  "default": "Milight Bridge",
+                  "required": true
+               },
+               "ip": {
+                  "title": "Hostname or IP Address",
+                  "type": "string",
+                  "format": "hostname",
+                  "required": false,
+                  "placeholder": "192.168.X.X",
+                  "description": "You should enter the IP Address of the bridge to avoid heavy lags"
+               },
+               "type": {
+                  "title": "Type",
+                  "type": "string",
+                  "default": "v6",
+                  "required": true,
+                  "oneOf": [
+                    { "title": "v6", "enum": ["v6"] }
+                  ]
+               },
+               "delay": {
+                  "title": "Delay",
+                  "type": "integer",
+                  "default": 25,
+                  "minimum": 0,
+                  "description": "Delay between each command",
+                  "required": false
+               },
+               "devices": {
+                  "type": "array",
+                  "items": {
+                     "title": "Device Config",
+                     "type": "object",
+                     "properties": {
+                        "name": {
+                           "title": "name",
+                           "type": "string",
+                           "placeholder": "Bedroom",
+                           "required": true
+                        },
+                        "zone": {
+                           "title": "zone",
+                           "type": "integer",
+                           "default": 1,
+                           "required": true
+                        },
+                        "hasnightmode": {
+                           "title": "hasnightmode",
+                           "type": "boolean",
+                           "default": false
+                        },
+                        "type": {
+                           "title": "type",
+                           "type": "string",
+                           "default": "fullcolor8zone",
+                           "required": true,
+                           "oneOf": [
+                               { "title": "fullcolor8zone", "enum": ["fullcolor8zone"] },
+                               { "title": "fullcolor", "enum": ["fullcolor"] },
+                               { "title": "rgbww", "enum": ["rgbww"] },
+                               { "title": "rgbw", "enum": ["rgbw"] },
+                               { "title": "rgb", "enum": ["rgb"] },
+                               { "title": "bridge", "enum": ["bridge"] }
+                            ]
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
