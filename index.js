@@ -70,7 +70,7 @@ MiLightPlatform.prototype._addDevices = function(bridgeConfig) {
   // Initialize a new controller to be used for all zones defined for this bridge
   // We interface the bridge directly via serial port
   bridgeController = new Milight.MilightController({
-    ip: bridgeConfig.ip || false,
+    ip: bridgeConfig.ip || "255.255.255.255",
     type: bridgeConfig.type || 'v6',
     delayBetweenCommands: bridgeConfig.delay || 25,
     commandRepeat: bridgeConfig.repeat || undefined
