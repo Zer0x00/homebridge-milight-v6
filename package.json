@@ -1,6 +1,6 @@
 {
   "name": "homebridge-milight-v6",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Plugin for milight v6 (2016 onwards) for homebridge (https://github.com/buenyamin-olgun/homebridge); Original Author: Marcel Laurijsse",
   "license": "GNU GPL",
   "author": {
