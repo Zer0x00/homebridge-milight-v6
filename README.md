@@ -20,7 +20,7 @@ Example config:
 
     "platforms": [
         {
-          "platform": "Milight",
+          "platform": "MiLight-v6",
           "name": "Milight Platform",
           "bridges" : [
             {
