@@ -16,7 +16,7 @@ Example config:
         "pin": "xxx-xx-xxx"
     },
 
-    "description": "Homebride Milight Control",
+    "description": "Homebridge Milight Control",
 
     "platforms": [
         {
